@@ -1,11 +1,251 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Dunhill Gonzales - Portfolio Homepage</title>
+    <link rel="stylesheet" href="src/output.css">
 </head>
-<body>
-    
+
+<body class="font-sans text-gray-900 bg-customBg">
+
+    <!-- Navbar -->
+    <header class="fixed top-0 z-10 w-full py-6 bg-opacity-90 bg-customBg font-newsreader">
+        <nav class="container flex items-center justify-between max-w-6xl px-6 mx-auto lg:px-12">
+            <a href="index.html" id="scroll-logo" class="group">
+                <div
+                    class="w-auto h-16 transition-transform duration-300 ease-in-out transform group-hover:scale-110 group-hover:animate-shake">
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="38" height="auto" viewBox="0 0 35 32"
+                        class="w-auto h-full text-gray-900 transition-colors duration-300 fill-current group-hover:text-cyan-600">
+                        <path d="M5.234 20.782l3.969 7.229 3.913-7.229h1.856l-5.025 8.799h-1.487l-5.088-8.799h1.856z">
+                        </path>
+                        <path
+                            d="M2.301 8.049c0-1.8 0.487-3.19 1.467-4.163 0.98-0.98 2.44-1.467 4.379-1.467h1.779c1.946 0 3.406 0.493 4.393 1.474s1.473 2.384 1.473 4.198v11.093h-13.491v-11.135zM13.178 5.143c-0.688-0.633-1.758-0.945-3.211-0.945h-1.724c-1.487 0-2.586 0.313-3.295 0.945s-1.063 1.599-1.063 2.905v9.355h10.328v-9.355c0-1.307-0.348-2.273-1.036-2.905z">
+                        </path>
+                        <path
+                            d="M21.818 2.509l3.969 7.229 3.913-7.229h1.856s-5.025 8.799-5.025 8.799h-1.487s-5.081-8.799-5.081-8.799h1.856z">
+                        </path>
+                        <path d="M23.374 20.664h1.613v8.91l-1.613-0.334v-8.577z"></path>
+                        <path
+                            d="M20.518 28.108c0.987 0.987 2.447 1.474 4.393 1.474h0.076v-1.779h-0.111c-1.446 0-2.516-0.313-3.211-0.945-0.688-0.633-1.036-1.599-1.036-2.905v-8.778c0-0.32 0.257-0.577 0.577-0.577h9.168c0.32 0 0.577 0.257 0.577 0.577v8.778c0 1.307-0.354 2.273-1.063 2.905s-1.807 0.945-3.288 0.945v1.779h0.090c1.946 0 3.406-0.487 4.379-1.467 0.98-0.98 1.467-2.363 1.467-4.163v-9.988c0-0.633-0.514-1.147-1.147-1.147h-11.197c-0.633 0-1.147 0.514-1.147 1.147v9.946c0 1.814 0.493 3.211 1.474 4.198z">
+                        </path>
+                    </svg>
+                </div>
+            </a>
+
+            <!-- Navigation links for medium and larger screens -->
+            <ul class="hidden space-x-8 text-gray-600 md:flex">
+                <li><a href="#about" class="hover:text-gray-800 hover:underline">About</a></li>
+                <li><a href="#projects" class="hover:text-gray-800 hover:underline">Projects</a></li>
+                <li><a href="contact-me-page.html" class="hover:text-gray-800 hover:underline">Contact</a></li>
+            </ul>
+
+            <!-- Hamburger menu button for small screens -->
+            <div class="md:hidden">
+                <button id="hamburger" class="text-gray-600 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+        </nav>
+
+        <div id="menu" class="absolute right-0 hidden w-full bg-white md:hidden">
+            <ul class="flex flex-col items-center py-4 space-y-2">
+                <li><a href="#about" class="text-gray-600 hover:text-gray-800">About</a></li>
+                <li><a href="#projects" class="text-gray-600 hover:text-gray-800">Projects</a></li>
+                <li><a href="#contact" class="text-gray-600 hover:text-gray-800">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="flex items-center justify-center h-screen px-6 pt-20 bg-customBg md:pt-0">
+        <div class="flex flex-col items-center max-w-6xl mx-auto space-y-6 md:space-y-0 md:flex-row md:w-3/4 lg:w-2/3">
+            <!-- Image Section -->
+            <img src="img/von-pic.png" alt="Hero Image" class="object-cover w-3/4 h-auto rounded-lg md:w-1/2">
+
+            <!-- Text Container -->
+            <div class="max-w-md text-center md:ml-6 md:max-w-lg lg:max-w-xl md:text-left">
+                <h1 class="mb-4 text-3xl italic text-gray-900 md:text-5xl font-newsreader">
+                    “Designing impactful digital experiences is more than a career—it’s my passion.”
+                </h1>
+                <p class="mb-6 text-base text-gray-800 md:text-lg">
+                    I’m Dunhill Von Gonzales, but you can call me Von—a <span class="font-extrabold">Web Designer and
+                        Developer</span> focused on crafting engaging user experiences through creative design and
+                    digital media.
+                </p>
+                <!-- Buttons in One Row -->
+                <div class="flex justify-center space-x-4 md:justify-start">
+                    <a href="#projects" id="hero-button"
+                        class="px-8 py-3 italic text-gray-900 rounded-full outline font-newsreader scroll-button hover:bg-gray-900 hover:text-customBg">
+                        View My Work
+                    </a>
+                    <a href="mailto:dunhillvongonzales@example.com" id="contact"
+                        class="px-8 py-3 italic bg-gray-900 rounded-full text-customBg outline font-newsreader scroll-button hover:bg-customBg hover:text-gray-900">
+                        Email Me
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="container px-6 py-20 mx-auto text-left md:w-3/4 lg:w-2/3 pt-28">
+        <!-- Changed text alignment to left -->
+        <h2 class="mb-8 text-4xl italic text-gray-900 font-newsreader">About Me</h2>
+        <p class="mx-auto text-lg text-gray-700">My journey began at Northern Alberta Institute of Technology (NAIT), where
+            I’m currently studying Web Design and Development. Since then, I’ve collaborated with global teams,
+            designing everything from annual reports in Southeast Asia to large-format signage here in Canada. Each role
+            has taught me the art of balancing creativity with precision, ensuring every project meets its goals without
+            compromising on aesthetics. Skilled in Adobe Creative Cloud, Figma, and front-end development, I see each
+            project as an opportunity to blend functionality with beauty. My expertise in video editing and love for
+            motion graphics bring a unique dynamic, transforming static designs into memorable experiences. Ready to see
+            more? Explore my portfolio, and let’s create something remarkable together!</p>
+
+        <!-- Skills -->
+        <div id="about" class="container px-6 py-20 mx-auto text-left md:w-3/4 lg:w-2/3">
+            <h3 class="mb-4 text-2xl italic text-gray-900 font-newsreader">Skills &amp; Passion</h3>
+            <p class="mx-auto text-lg text-gray-700">Photoshop, Illustrator, InDesign, After Effects, Premiere Pro, Figma, HTML, CSS, Bootstrap, Tailwind, JavaScript (JS), PHP, and WordPress.</p>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="container px-6 py-20 mx-auto text-left pt-28 md:w-3/4 lg:w-2/3">
+        <h2 class="mb-8 text-4xl italic text-gray-900 font-newsreader">Projects</h2>
+
+        <div class="max-w-6xl mx-auto space-y-24 lg:space-y-24"> <!-- Increased space-y for all views -->
+            <!-- Project Card 1 -->
+            <div class="flex flex-col items-center transition duration-300 transform md:flex-row hover:scale-105">
+                <img src="/img/advanced-layout.png" alt="Project 1"
+                    class="w-full h-auto mb-4 rounded-lg md:w-7/12 md:mb-0">
+                <div class="md:ml-6">
+                    <h3 class="mb-4 text-2xl text-gray-900 font-newsreader">Advanced Responsive Web Layout with
+                        Interactive Features</h3>
+                    <p class="mb-2 text-sm text-gray-800">I utilized HTML, CSS, and JavaScript to develop this project.
+                    </p>
+                    <div class="flex flex-row gap-2 mb-12 opacity-70">
+                        <img src="img/html-icon.png" alt="" class="w-auto h-16">
+                        <img src="img/css-icon.png" alt="" class="w-auto h-16">
+                        <img src="img/js-icon.png" alt="" class="w-auto h-16">
+                    </div>
+                    <a href="https://celebrated-truffle-88872c.netlify.app/" target="_blank"
+                        class="px-8 py-3 italic text-gray-900 rounded-full outline font-newsreader scroll-button hover:bg-gray-900 hover:text-customBg">Live
+                        Preview</a>
+                    <a href="project-1.html"
+                        class="px-8 py-3 ml-4 italic bg-gray-900 rounded-full text-customBg outline font-newsreader scroll-button hover:bg-customBg hover:text-gray-900">View
+                        Details</a>
+                </div>
+            </div>
+
+            <!-- Project Card 2 -->
+            <div class="flex flex-col items-center transition duration-300 transform md:flex-row hover:scale-105">
+                <img src="/img/wordpress-project.png" alt="Project 1"
+                    class="w-full h-auto mb-4 rounded-lg md:w-7/12 md:mb-0">
+                <div class="md:ml-6">
+                    <h3 class="mb-4 text-2xl text-gray-900 font-newsreader">Transforming Static Designs into a Dynamic
+                        WordPress Site</h3>
+                    <p class="mb-2 text-sm text-gray-800">I utilized WordPress to develop this project.</p>
+                    <div class="flex flex-row gap-2 mb-12 opacity-70">
+                        <img src="img/wordpress-icon.png" alt="" class="w-auto h-14">
+                    </div>
+                    <a href="https://teal-shrew-536366.hostingersite.com/#" target="_blank"
+                        class="px-8 py-3 italic text-gray-900 rounded-full outline font-newsreader scroll-button hover:bg-gray-900 hover:text-customBg">Live
+                        Preview</a>
+                    <a href="project-2.html"
+                        class="px-8 py-3 ml-4 italic bg-gray-900 rounded-full text-customBg outline font-newsreader scroll-button hover:bg-customBg hover:text-gray-900">View
+                        Details</a>
+                </div>
+            </div>
+
+            <!-- Project Card 3 -->
+            <div class="flex flex-col items-center transition duration-300 transform md:flex-row hover:scale-105">
+                <img src="/img/validation-project.png" alt="Project 1"
+                    class="w-full h-auto mb-4 rounded-lg md:w-7/12 md:mb-0">
+                <div class="md:ml-6">
+                    <h3 class="mb-4 text-2xl text-gray-900 font-newsreader">Creating a Secure Web Form with Custom
+                        Validation for a Floral Shop</h3>
+                    <p class="mb-2 text-sm text-gray-800">I utilized HTML, JavaScript, Bootstrap, and PHP to develop
+                        this project.</p>
+                    <div class="flex flex-row items-end gap-2 mb-12 opacity-70">
+                        <img src="img/html-icon.png" alt="" class="w-auto h-16">
+                        <img src="img/js-icon.png" alt="" class="w-auto h-16">
+                        <img src="img/bootstrap-icon.png" alt="" class="w-auto h-16">
+                        <img src="img/php-icon.png" alt="" class="w-auto h-14">
+                    </div>
+                    <a href="https://dgonzales5.dmitstudent.ca/dmit2025/lab-02-final-v4/public/" target="_blank"
+                        class="px-8 py-3 italic text-gray-900 rounded-full outline font-newsreader scroll-button hover:bg-gray-900 hover:text-customBg">Live
+                        Preview</a>
+                    <a href="project-3.html"
+                        class="px-8 py-3 ml-4 italic bg-gray-900 rounded-full text-customBg outline font-newsreader scroll-button hover:bg-customBg hover:text-gray-900">View
+                        Details</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Contact Section -->
+    <section id="contact-me" class="container px-6 py-20 mx-auto text-left md:w-3/4 lg:w-2/3">
+        <!-- Changed text alignment to left -->
+        <h2 class="mb-8 text-4xl italic text-gray-900 font-newsreader">Let's Connect and Create</h2>
+        <p class="mb-6 text-lg text-gray-800">I'm always open to discussing new projects, creative ideas, or
+            opportunities to be part of your vision.</p>
+        <a href="contact-me-page.html"
+            class="px-8 py-3 italic bg-gray-900 rounded-full text-customBg outline font-newsreader scroll-button hover:bg-customBg hover:text-gray-900">Contact
+            Me</a>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-6 text-gray-600 bg-white">
+        <div class="container flex items-center justify-between px-6 mx-auto">
+            <!-- Left side: Copyright -->
+            <p class="text-sm">© 2024 dunhillgonzales. All Rights Reserved</p>
+
+            <!-- Right side: Social Media Icons -->
+            <div class="flex space-x-4">
+                <a href="https://www.linkedin.com/in/dunhillvongonzales/" aria-label="LinkedIn" target="_blank"
+                    class="hover:text-gray-900">
+                    <!-- LinkedIn Icon -->
+                    <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
+                        <path
+                            d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.761 0 5-2.239 5-5v-14c0-2.761-2.239-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.231c-.966 0-1.75-.784-1.75-1.75s.784-1.75 1.75-1.75 1.75.784 1.75 1.75-.784 1.75-1.75 1.75zm13.5 11.231h-3v-5.5c0-1.378-.439-2.317-1.556-2.317-.85 0-1.355.571-1.573 1.122-.081.196-.101.471-.101.745v5.95h-3v-10h3v1.385c.422-.653 1.181-1.585 2.878-1.585 2.098 0 3.652 1.378 3.652 4.346v5.854z" />
+                    </svg>
+                </a>
+                <a href="https://www.instagram.com/v0n.g0/" aria-label="Instagram" target="_blank"
+                    class="hover:text-gray-900">
+                    <!-- Instagram Icon -->
+                    <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
+                        <path
+                            d="M12 0c-3.316 0-3.725.013-5.021.072-1.27.057-2.142.25-2.909.534-.787.293-1.451.683-2.104 1.335-.652.653-1.042 1.317-1.335 2.104-.284.767-.477 1.639-.534 2.909-.059 1.296-.072 1.705-.072 5.021s.013 3.725.072 5.021c.057 1.27.25 2.142.534 2.909.293.787.683 1.451 1.335 2.104.653.652 1.317 1.042 2.104 1.335.767.284 1.639.477 2.909.534 1.296.059 1.705.072 5.021.072s3.725-.013 5.021-.072c1.27-.057 2.142-.25 2.909-.534.787-.293 1.451-.683 2.104-1.335.652-.653 1.042-1.317 1.335-2.104.284-.767.477-1.639.534-2.909.059-1.296.072-1.705.072-5.021s-.013-3.725-.072-5.021c-.057-1.27-.25-2.142-.534-2.909-.293-.787-.683-1.451-1.335-2.104-.653-.652-1.317-1.042-2.104-1.335-.767-.284-1.639-.477-2.909-.534-1.296-.059-1.705-.072-5.021-.072zm0 2c3.261 0 3.633.011 4.914.07 1.167.054 1.8.247 2.218.412.55.213.944.47 1.361.887.418.418.674.812.887 1.361.165.418.358 1.051.412 2.218.059 1.281.07 1.653.07 4.914s-.011 3.633-.07 4.914c-.054 1.167-.247 1.8-.412 2.218-.213.55-.47.944-.887 1.361-.418.418-.812.674-1.361.887-.418.165-1.051.358-2.218.412-1.281.059-1.653.07-4.914.07s-3.633-.011-4.914-.07c-1.167-.054-1.8-.247-2.218-.412-.55-.213-.944-.47-1.361-.887-.418-.418-.674-.812-.887-1.361-.165-.418-.358-1.051-.412-2.218-.059-1.281-.07-1.653-.07-4.914s.011-3.633.07-4.914c.054-1.167.247-1.8.412-2.218.213-.55.47-.944.887-1.361.418-.418.812-.674 1.361-.887.418-.165 1.051-.358 2.218-.412 1.281-.059 1.653-.07 4.914-.07zm0 4.5c-4.136 0-7.5 3.364-7.5 7.5s3.364 7.5 7.5 7.5 7.5-3.364 7.5-7.5-3.364-7.5-7.5-7.5zm0 2c3.032 0 5.5 2.468 5.5 5.5s-2.468 5.5-5.5 5.5-5.5-2.468-5.5-5.5 2.468-5.5 5.5-5.5zm6.5-2.5c-.828 0-1.5.672-1.5 1.5s.672 1.5 1.5 1.5 1.5-.672 1.5-1.5-.672-1.5-1.5-1.5z" />
+                    </svg>
+                </a>
+                <a href="https://github.com/dunhillvongonzales" aria-label="GitHub" target="_blank"
+                    class="hover:text-gray-900">
+                    <!-- GitHub Icon -->
+                    <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
+                        <path
+                            d="M12 .5c-6.627 0-12 5.373-12 12 0 5.303 3.438 9.8 8.207 11.387.6.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.612-4.033-1.612-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.73.083-.73 1.205.084 1.838 1.238 1.838 1.238 1.07 1.835 2.809 1.305 3.495.997.109-.775.418-1.305.762-1.605-2.666-.305-5.466-1.333-5.466-5.932 0-1.311.469-2.382 1.235-3.221-.123-.303-.535-1.526.117-3.176 0 0 1.008-.322 3.3 1.23.957-.266 1.983-.398 3.003-.404 1.02.006 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.654 1.65.243 2.873.12 3.176.769.839 1.232 1.91 1.232 3.221 0 4.61-2.803 5.625-5.475 5.922.429.371.823 1.102.823 2.22v3.293c0 .32.19.694.8.575 4.765-1.591 8.2-6.087 8.2-11.386 0-6.627-5.373-12-12-12z" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const menu = document.getElementById('menu');
+        const heroButton = document.getElementById('hero-button');
+
+        hamburger.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+    </script>
+
 </body>
+
 </html>

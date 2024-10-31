@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Responsive Web Layout - Project Details</title>
+    <link rel="stylesheet" href="src/output.css">
+</head>
+
+<body class="font-sans text-gray-900 bg-customBg">
+
+    <!-- Navbar -->
+    <header class="fixed top-0 z-10 w-full py-6 bg-opacity-90 bg-customBg font-newsreader">
+        <nav class="container flex items-center justify-between max-w-6xl px-6 mx-auto lg:px-12">
+            <a href="index.html" id="scroll-logo" class="group">
+                <img src="img/von-logo.svg" alt="Von Logo" class="w-auto h-16 transition-transform duration-300 ease-in-out transform group-hover:scale-110 group-hover:animate-shake">
+            </a>
+        
+            <!-- Navigation links for medium and larger screens -->
+            <ul class="hidden space-x-8 text-gray-600 md:flex">
+                <li><a href="index.html" class="hover:text-gray-800 hover:underline">About</a></li>
+                <li><a href="Projects-page.html" class="text-gray-600 hover:text-gray-800">Projects</a></li>
+                <li><a href="contact-me-page.html" class="hover:text-gray-800 hover:underline">Contact</a></li>
+            </ul>
+
+            <div class="md:hidden">
+                <button id="hamburger" class="text-gray-600 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <section class="container px-6 py-20 mx-auto mt-12 text-left md:w-3/4 lg:w-2/3">
+        <h1 class="mb-8 text-4xl text-center text-gray-900 font-newsreader">Creating a Secure Web Form with Custom Validation for a
+            Floral Shop
+        </h1>
+        <img src="/img/validation-project.png" alt="Project Image" class="w-full h-auto mb-8 rounded-lg">
+
+        <h2 class="mb-4 text-2xl text-gray-900 font-newsreader">Project Overview</h2>
+        <p class="mb-4 text-gray-800">
+            As a part of the add-ons Custom Functions, Form Validation, & Output, I designed a reliable web form for a
+            fictitious flower shop that let clients request quotations on custom designs. My emphasis was on deploying
+            strong validation strategies to prevent XSS vulnerabilities. I worked on custom validation functions to
+            filter and complete all mandatory fields. I constructed backend validation on HTML and PHP for different
+            types of inputs while making it easier and more secure. This project broadened my horizon about form
+            validation by placing importance on secure coding techniques and the rationale behind why data validation is
+            a must in web building.
+        </p>
+
+        <h2 class="mb-4 text-2xl text-gray-900 font-newsreader">Key Features</h2>
+        <ul class="mb-12 text-gray-800 list-disc list-inside">
+            <li>Secure web form with custom validation</li>
+            <li>Protection against cross-site scripting (XSS)</li>
+            <li>Robust backend checks for diverse input types</li>
+            <li>Emphasis on user safety and data integrity</li>
+        </ul>
+
+        <a href="Projects-page.html" class="px-8 py-3 mt-8 italic text-gray-900 rounded-full outline font-newsreader scroll-button hover:bg-gray-900 hover:text-customBg">Back to Projects</a>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-6 text-gray-600 bg-white">
+        <div class="container flex items-center justify-between px-6 mx-auto">
+            <!-- Left side: Copyright -->
+            <p class="text-sm">© 2024 dunhillgonzales. All Rights Reserved</p>
+
+            <!-- Right side: Social Media Icons -->
+            <div class="flex space-x-4">
+                <a href="https://www.linkedin.com/in/dunhillvongonzales/" aria-label="LinkedIn" target="_blank"
+                    class="hover:text-gray-900">
+                    <!-- LinkedIn Icon -->
+                    <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
+                        <path
+                            d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.761 0 5-2.239 5-5v-14c0-2.761-2.239-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.231c-.966 0-1.75-.784-1.75-1.75s.784-1.75 1.75-1.75 1.75.784 1.75 1.75-.784 1.75-1.75 1.75zm13.5 11.231h-3v-5.5c0-1.378-.439-2.317-1.556-2.317-.85 0-1.355.571-1.573 1.122-.081.196-.101.471-.101.745v5.95h-3v-10h3v1.385c.422-.653 1.181-1.585 2.878-1.585 2.098 0 3.652 1.378 3.652 4.346v5.854z" />
+                    </svg>
+                </a>
+                <a href="https://www.instagram.com/v0n.g0/" aria-label="Instagram" target="_blank" class="hover:text-gray-900">
+                    <!-- Instagram Icon -->
+                    <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
+                        <path
+                            d="M12 0c-3.316 0-3.725.013-5.021.072-1.27.057-2.142.25-2.909.534-.787.293-1.451.683-2.104 1.335-.652.653-1.042 1.317-1.335 2.104-.284.767-.477 1.639-.534 2.909-.059 1.296-.072 1.705-.072 5.021s.013 3.725.072 5.021c.057 1.27.25 2.142.534 2.909.293.787.683 1.451 1.335 2.104.653.652 1.317 1.042 2.104 1.335.767.284 1.639.477 2.909.534 1.296.059 1.705.072 5.021.072s3.725-.013 5.021-.072c1.27-.057 2.142-.25 2.909-.534.787-.293 1.451-.683 2.104-1.335.652-.653 1.042-1.317 1.335-2.104.284-.767.477-1.639.534-2.909.059-1.296.072-1.705.072-5.021s-.013-3.725-.072-5.021c-.057-1.27-.25-2.142-.534-2.909-.293-.787-.683-1.451-1.335-2.104-.653-.652-1.317-1.042-2.104-1.335-.767-.284-1.639-.477-2.909-.534-1.296-.059-1.705-.072-5.021-.072zm0 2c3.261 0 3.633.011 4.914.07 1.167.054 1.8.247 2.218.412.55.213.944.47 1.361.887.418.418.674.812.887 1.361.165.418.358 1.051.412 2.218.059 1.281.07 1.653.07 4.914s-.011 3.633-.07 4.914c-.054 1.167-.247 1.8-.412 2.218-.213.55-.47.944-.887 1.361-.418.418-.812.674-1.361.887-.418.165-1.051.358-2.218.412-1.281.059-1.653.07-4.914.07s-3.633-.011-4.914-.07c-1.167-.054-1.8-.247-2.218-.412-.55-.213-.944-.47-1.361-.887-.418-.418-.674-.812-.887-1.361-.165-.418-.358-1.051-.412-2.218-.059-1.281-.07-1.653-.07-4.914s.011-3.633.07-4.914c.054-1.167.247-1.8.412-2.218.213-.55.47-.944.887-1.361.418-.418.812-.674 1.361-.887.418-.165 1.051-.358 2.218-.412 1.281-.059 1.653-.07 4.914-.07zm0 4.5c-4.136 0-7.5 3.364-7.5 7.5s3.364 7.5 7.5 7.5 7.5-3.364 7.5-7.5-3.364-7.5-7.5-7.5zm0 2c3.032 0 5.5 2.468 5.5 5.5s-2.468 5.5-5.5 5.5-5.5-2.468-5.5-5.5 2.468-5.5 5.5-5.5zm6.5-2.5c-.828 0-1.5.672-1.5 1.5s.672 1.5 1.5 1.5 1.5-.672 1.5-1.5-.672-1.5-1.5-1.5z" />
+                    </svg>
+                </a>
+                <a href="https://github.com" aria-label="GitHub" target="_blank" class="hover:text-gray-900">
+                    <!-- GitHub Icon -->
+                    <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
+                        <path
+                            d="M12 .5c-6.627 0-12 5.373-12 12 0 5.303 3.438 9.8 8.207 11.387.6.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.612-4.033-1.612-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.73.083-.73 1.205.084 1.838 1.238 1.838 1.238 1.07 1.835 2.809 1.305 3.495.997.109-.775.418-1.305.762-1.605-2.666-.305-5.466-1.333-5.466-5.932 0-1.311.469-2.382 1.235-3.221-.123-.303-.535-1.526.117-3.176 0 0 1.008-.322 3.3 1.23.957-.266 1.983-.398 3.003-.404 1.02.006 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.654 1.65.243 2.873.12 3.176.769.839 1.232 1.91 1.232 3.221 0 4.61-2.803 5.625-5.475 5.922.429.371.823 1.102.823 2.22v3.293c0 .32.19.694.8.575 4.765-1.591 8.2-6.087 8.2-11.386 0-6.627-5.373-12-12-12z" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/hamburger.js"></script>
+</body>
+
+</html>

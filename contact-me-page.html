@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dunhill Gonzales - Portfolio Homepage</title>
+    <link rel="stylesheet" href="src/output.css">
+</head>
+
+<body class="font-sans text-gray-900 bg-customBg">
+
+    <!-- Navbar -->
+    <header class="fixed top-0 z-10 w-full py-6 bg-opacity-90 bg-customBg font-newsreader">
+        <nav class="container flex items-center justify-between max-w-6xl px-6 mx-auto lg:px-12">
+            <a href="index.html" id="scroll-logo" class="group">
+                <div class="w-auto h-16 transition-transform duration-300 ease-in-out transform group-hover:scale-110 group-hover:animate-shake">
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="38" height="auto" viewBox="0 0 35 32" class="w-auto h-full text-gray-900 transition-colors duration-300 fill-current group-hover:text-cyan-600">
+                        <path d="M5.234 20.782l3.969 7.229 3.913-7.229h1.856l-5.025 8.799h-1.487l-5.088-8.799h1.856z"></path>
+                        <path d="M2.301 8.049c0-1.8 0.487-3.19 1.467-4.163 0.98-0.98 2.44-1.467 4.379-1.467h1.779c1.946 0 3.406 0.493 4.393 1.474s1.473 2.384 1.473 4.198v11.093h-13.491v-11.135zM13.178 5.143c-0.688-0.633-1.758-0.945-3.211-0.945h-1.724c-1.487 0-2.586 0.313-3.295 0.945s-1.063 1.599-1.063 2.905v9.355h10.328v-9.355c0-1.307-0.348-2.273-1.036-2.905z"></path>
+                        <path d="M21.818 2.509l3.969 7.229 3.913-7.229h1.856s-5.025 8.799-5.025 8.799h-1.487s-5.081-8.799-5.081-8.799h1.856z"></path>
+                        <path d="M23.374 20.664h1.613v8.91l-1.613-0.334v-8.577z"></path>
+                        <path d="M20.518 28.108c0.987 0.987 2.447 1.474 4.393 1.474h0.076v-1.779h-0.111c-1.446 0-2.516-0.313-3.211-0.945-0.688-0.633-1.036-1.599-1.036-2.905v-8.778c0-0.32 0.257-0.577 0.577-0.577h9.168c0.32 0 0.577 0.257 0.577 0.577v8.778c0 1.307-0.354 2.273-1.063 2.905s-1.807 0.945-3.288 0.945v1.779h0.090c1.946 0 3.406-0.487 4.379-1.467 0.98-0.98 1.467-2.363 1.467-4.163v-9.988c0-0.633-0.514-1.147-1.147-1.147h-11.197c-0.633 0-1.147 0.514-1.147 1.147v9.946c0 1.814 0.493 3.211 1.474 4.198z"></path>
+                    </svg>
+                </div>
+            </a>
+
+            <!-- Navigation links for medium and larger screens -->
+            <ul class="hidden space-x-8 text-gray-600 md:flex">
+                <li><a href="index.html" class="hover:text-gray-800 hover:underline">About</a></li>
+                <li><a href="Projects-page.html" class="hover:text-gray-800 hover:underline">Projects</a></li>
+                <li><a href="contact-me-page.html" class="hover:text-gray-800 hover:underline">Contact</a></li>
+            </ul>
+
+            <!-- Hamburger menu button for small screens -->
+            <div class="md:hidden">
+                <button id="hamburger" class="text-gray-600 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+        </nav>
+
+        <div id="menu" class="absolute right-0 hidden w-full bg-white md:hidden">
+            <ul class="flex flex-col items-center py-4 space-y-2">
+                <li><a href="#about" class="text-gray-600 hover:text-gray-800">About</a></li>
+                <li><a href="#projects" class="text-gray-600 hover:text-gray-800">Projects</a></li>
+                <li><a href="#contact" class="text-gray-600 hover:text-gray-800">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Contact Information -->
+    <main class="container px-6 py-20 mx-auto text-left md:w-3/4 lg:w-2/3 pt-28">
+        <div class="w-full max-w-md p-6 mx-auto">
+            <h2 class="mb-8 text-4xl italic text-gray-900 font-newsreader">Contact</h2>
+            <form>
+                <div class="mb-4">
+                    <label for="name" class="block text-gray-700">Name</label>
+                    <input type="text" id="name" name="name" required
+                        class="block w-full p-2 mt-1 italic border border-gray-300 rounded focus:outline-none focus:ring focus:ring-cyan-600 font-newsreader"
+                        placeholder="Lorenzo">
+                </div>
+                <div class="mb-4">
+                    <label for="email" class="block text-gray-700">Email Address</label>
+                    <input type="email" id="email" name="email" required
+                        class="block w-full p-2 mt-1 italic border border-gray-300 rounded focus:outline-none focus:ring focus:ring-cyan-600 font-newsreader"
+                        placeholder="lorenzo.markus@gmail.com">
+                </div>
+                <div class="mb-4">
+                    <label for="message" class="block text-gray-700">Message</label>
+                    <textarea id="message" name="message" required
+                        class="block w-full p-2 mt-1 italic border border-gray-300 rounded focus:outline-none focus:ring focus:ring-cyan-600 font-newsreader"
+                        rows="4" placeholder="Hello, I've got a project that I'd like to discuss further..."></textarea>
+                </div>
+                <button type="submit"
+                    class="px-8 py-3 italic bg-gray-900 rounded-full text-customBg outline font-newsreader scroll-button hover:bg-customBg hover:text-gray-900">
+                    Submit</button>
+            </form>
+        </div>
+    </main>
+    
+
+    <!-- Footer -->
+    <footer class="py-6 text-gray-600 bg-white">
+        <div class="container flex items-center justify-between px-6 mx-auto">
+            <!-- Left side: Copyright -->
+            <p class="text-sm">© 2024 Dunhill Gonzales. All Rights Reserved</p>
+
+            <!-- Right side: Social Media Icons -->
+            <div class="flex space-x-4">
+                <a href="https://www.linkedin.com/in/dunhillvongonzales/" aria-label="LinkedIn" target="_blank" class="hover:text-gray-900">
+                    <!-- LinkedIn Icon -->
+                    <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.761 0 5-2.239 5-5v-14c0-2.761-2.239-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.5c-1.035 0-1.875-.843-1.875-1.875s.84-1.875 1.875-1.875 1.875.843 1.875 1.875-.84 1.875-1.875 1.875zm15.5 12.5h-3v-5.5c0-1.309-.025-3-1.825-3-1.825 0-2.1 1.424-2.1 2.873v5.627h-3v-11h3v1.5c.414-.639 1.118-1.5 2.87-1.5 3.22 0 3.8 2.11 3.8 4.88v6.12z"></path>
+                    </svg>
+                </a>
+                <a href="https://twitter.com/dunhillvong" aria-label="Twitter" target="_blank" class="hover:text-gray-900">
+                    <!-- Twitter Icon -->
+                    <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M24 4.557c-.883.392-1.83.654-2.825.775 1.014-.609 1.794-1.572 2.165-2.724-.951.564-2.005.973-3.127 1.195-.895-.952-2.174-1.54-3.595-1.54-2.726 0-4.933 2.206-4.933 4.923 0 .387.044.764.127 1.124-4.103-.205-7.738-2.169-10.176-5.144-.426.733-.669 1.58-.669 2.486 0 1.717.874 3.23 2.204 4.118-.813-.026-1.577-.248-2.245-.616v.062c0 2.398 1.703 4.397 3.96 4.851-.414.112-.85.171-1.296.171-.316 0-.624-.031-.925-.086.623 1.95 2.433 3.37 4.578 3.409-1.675 1.314-3.785 2.095-6.074 2.095-.394 0-.784-.023-1.168-.067 2.164 1.39 4.736 2.207 7.493 2.207 8.993 0 13.907-7.439 13.907-13.911 0-.213 0-.426-.015-.639.953-.687 1.773-1.55 2.425-2.528z"></path>
+                    </svg>
+                </a>
+                <a href="https://github.com/dunhillvongonzales" aria-label="GitHub" target="_blank" class="hover:text-gray-900">
+                    <!-- GitHub Icon -->
+                    <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 0c-6.627 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.388.6.112.82-.261.82-.577 0-.285-.011-1.038-.016-2.037-3.338.727-4.043-1.608-4.043-1.608-.546-1.386-1.333-1.758-1.333-1.758-1.089-.743.083-.729.083-.729 1.204.084 1.838 1.238 1.838 1.238 1.068 1.83 2.803 1.302 3.489.995.107-.774.418-1.302.76-1.604-2.665-.304-5.466-1.332-5.466-5.929 0-1.311.467-2.38 1.237-3.22-.124-.304-.537-1.53.117-3.182 0 0 1.007-.322 3.3 1.229.957-.266 1.988-.399 3.005-.403 1.016.004 2.048.137 3.006.403 2.293-1.551 3.3-1.229 3.3-1.229.654 1.652.241 2.878.118 3.182.772.84 1.237 1.909 1.237 3.22 0 4.605-2.804 5.622-5.474 5.922.428.37.812 1.099.812 2.213 0 1.603-.014 2.894-.014 3.286 0 .318.219.693.825.577a12.026 12.026 0 0 0 8.204-11.388c0-6.627-5.373-12-12-12z"></path>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Toggle the mobile menu
+        const hamburger = document.getElementById('hamburger');
+        const menu = document.getElementById('menu');
+        hamburger.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+
+</html>
